@@ -9,9 +9,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Welcome to Flutter',
-      theme: ThemeData(
-        primaryColor: Colors.pinkAccent[400],
-      ),
+      theme: ThemeData.dark(),
       home: RandomWords(),
     );
   }
@@ -32,7 +30,7 @@ class RandomWordsState extends State<RandomWords> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Startup Name Genarator'),
+        title: Text('Escoge una palabra'),
         actions: <Widget>[
           IconButton(
             icon: Icon(Icons.list),
